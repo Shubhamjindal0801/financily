@@ -1,0 +1,18 @@
+.custom-input{
+    border: 0px;
+    border-bottom: 1px solid var(--black);
+    padding: 0.5rem 0rem;
+    width: 100%;
+    border-radius: 0;
+    margin-top: -1rem !important;
+}
+.custom-input:focus{
+    outline: none;
+    opacity: 1;
+    transition: all .3s;
+}
+
+.custom-input::placeholder{
+    color:rgba(0,0,0,0.5)
+}
+

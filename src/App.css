@@ -1,0 +1,68 @@
+/* styles.css */
+
+/* Common styles for both desktop and mobile */
+.chart-container {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chart-wrapper {
+    width: 80%; /* You can adjust the width of the line chart as per your preference */
+    max-width: 900px; /* Set a maximum width for the line chart */
+    height: auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    justify-content: space-between;
+    margin: 1rem 1rem 3rem 1.5rem;
+  }
+  
+  .chart-wrapper2 {
+    width: 80%; /* You can adjust the width of the pie chart as per your preference */
+    max-width: 350px; /* Set a maximum width for the pie chart */
+    height: auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    justify-content: space-between;
+    margin: 1rem 1rem 3rem 1rem;
+  }
+  @media screen and (max-width: 758px) {
+    body{
+  overflow-x: hidden;
+    }
+    .chart-container {
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 90vw;
+      margin: 2rem;
+    }
+    
+    .chart-wrapper,
+    .chart-wrapper2 {
+      width: 80vw;
+      margin-bottom: 2rem;
+      /* margin: 1.5rem; */
+    }
+  }
+  /* Styles for desktop view */
+  @media screen and (max-width: 1000px) {
+    .chart-container {
+      margin: 2rem;
+      /* width: 76vw; */
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    body{
+      overflow-x: hidden;
+        } 
+    .chart-wrapper,
+    .chart-wrapper2 {
+      width: 80vw;
+      margin-bottom: 2rem;
+      /* margin: 1.5rem; */
+    }
+  }
+  

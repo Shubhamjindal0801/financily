@@ -1,0 +1,50 @@
+.my-cards{
+    box-shadow: var(--shadow);
+    width: 50%;
+    /* padding: 0.2rem !important; */
+    /* margin: 2rem; */
+    border-radius: 0.5rem;
+    margin: 1rem;
+    flex: 1;
+    font-family:"Montserrat", sans-serif !important;
+}
+
+.my-row{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:16px;
+    flex-wrap: wrap;
+    margin: 2rem 2rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 90%; */
+    margin: 2rem 2rem;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+.my-row p{
+    margin:0
+}
+.my-cards h2{
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+    color:var(--black);
+}
+@media screen and (max-width: 758px) {
+  .my-row {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .my-cards h2{
+    font-size: 1rem;
+  }
+  .my-cards .btns .a{
+    font-size: .7rem;
+  }
+  .my-cards{
+    width: 200px;
+  }
+}
